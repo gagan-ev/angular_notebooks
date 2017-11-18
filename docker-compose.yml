@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+    app:
+        build: ./app # Looks for the Dockerfile within the working directory (./app)
+        container_name: angular-notebooks-app
+        volumes:
+            - /usr/src/app/node_modules # Saves the node modules so it does not have to re-install
+            - ./app:/usr/src/app # Mounts the host folder(s) onto the docker container for live development
+
+    api:
+        build: ./api # Looks for the Dockerfile within the working directory (./api)
+        container_name: angular-notebooks-api
+        volumes:
+            - /usr/src/app/node_modules # Saves the node modules so it does not have to re-install
+            - ./api:/usr/src/app # Mounts the host folder(s) onto the docker container for live development
+
+    webserver:
+        build: ./webserver
+        container_name: angular-notebooks-webserver
+        depends_on:
+            - api
+            - app
+        ports:
+            - "8888:80"

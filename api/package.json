@@ -1,0 +1,12 @@
+{
+  "name": "cityvoices-api",
+  "scripts": {
+    "start": "node main.js",
+    "test": "istanbul cover --include-all-sources=true _mocha --report lcovonly -- --recursive"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0"
+  }
+}
