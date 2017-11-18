@@ -9,3 +9,4 @@ npm-debug.log
 
 # dependencies
 node_modules
+.config
