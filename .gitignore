@@ -1,0 +1,11 @@
+**/.DS_Store
+# misc
+npm-debug.log
+
+# npm config and log files
+.npm/
+.jshintignore
+.jshintrc
+
+# dependencies
+node_modules
