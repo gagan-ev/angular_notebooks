@@ -10,6 +10,15 @@ export class NotebookHeaderComponent implements OnInit {
     'File', 'Edit', 'Insert', 'Cell', 'Help'
   ];
   toolbarOptions: any[] = [
+    'save',
+    'add',
+    'content_cut',
+    'content_copy',
+    'content_paste',
+    'arrow_upward',
+    'arrow_downward',
+    'skip_next',
+    'refresh'
   ]
 
   constructor() { }

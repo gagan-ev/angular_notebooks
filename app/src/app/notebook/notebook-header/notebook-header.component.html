@@ -1,16 +1,25 @@
 <div class="nb-header-container">
   <div class="nb-header-logo">
-    <img src="../../assets/images/angular-logo.png" alt="">
-    <span>NOTEBOOKS</span>
-    <!-- <span class="file-name">Filename</span> -->
+    <div class="nb-header-logo-left">
+      <img src="../../assets/images/angular-logo.png" alt="">
+      <span>NOTEBOOKS</span>
+    </div>
+    <div class="nb-header-logo-right">
+      <input type="text" class="form-control text-light" value="Untitled.txt">
+    </div>
   </div>
   <div class="nb-menu-nav">
     <ul>
-      <li *ngFor='let x of menuOptions'>
-        {{x}}
+      <li *ngFor='let m of menuOptions'>
+        {{ m }}
       </li>
     </ul>
   </div>
   <div class="nb-toolbar-nav">
+    <ul>
+      <li *ngFor='let t of toolbarOptions'>
+        <i class="material-icons">{{ t }}</i>
+      </li>
+    </ul>
   </div>
 </div>

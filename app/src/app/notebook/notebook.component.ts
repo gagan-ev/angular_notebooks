@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'nb-notebook',
   templateUrl: './notebook.component.html',
-  styleUrls: ['./notebook.component.css']
+  styleUrls: ['./notebook.component.scss']
 })
 export class NotebookComponent implements OnInit {
 
