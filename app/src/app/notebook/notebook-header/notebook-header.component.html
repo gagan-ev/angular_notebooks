@@ -1,3 +1,16 @@
-<p>
-  notebook-header works!
-</p>
+<div class="nb-header-container">
+  <div class="nb-header-logo">
+    <img src="../../assets/images/angular-logo.png" alt="">
+    <span>NOTEBOOKS</span>
+    <!-- <span class="file-name">Filename</span> -->
+  </div>
+  <div class="nb-menu-nav">
+    <ul>
+      <li *ngFor='let x of menuOptions'>
+        {{x}}
+      </li>
+    </ul>
+  </div>
+  <div class="nb-toolbar-nav">
+  </div>
+</div>

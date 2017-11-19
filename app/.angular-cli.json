@@ -19,9 +19,17 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css",
+        "../src/assets/fonts/sansation-fontfacekit/sansation_light_macroman/stylesheet.css",
+        "../src/assets/fonts/sansation-fontfacekit/sansation_regular_macroman/stylesheet.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.slim.min.js",
+        "../node_modules/popper.js/dist/umd/popper.min.js",
+        "../node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
+        "../bootstrap-startup.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
